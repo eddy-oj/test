@@ -1,0 +1,232 @@
+{% extends "dash_within_django/base_app_site.html" %}
+{% load static %}
+{% block content %}
+
+<style type="text/css">
+
+.bg-img {
+      background: url("{% static 'dash_within_django/images/background2.jpg' %}") no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      height:2000px;
+      /* position:absolute; */
+      width:100vw;
+      overflow-x: hidden;
+      /* margin-left:-20px; */
+      margin-top:-10px;
+      /* left:0
+      top:0; */
+    }
+.right_col{
+    overflow-x: hidden;
+}
+    .nav_menu{
+        margin-bottom:0;
+    }
+
+.nav-md .container.body .right_col{
+    padding-left:0;
+}
+
+.bg-img h1, .bg-img h2{
+    color:black;
+}
+
+.inner{
+padding:50px;
+
+}
+
+li, a, p {color: black;}
+
+.primary-text{
+    width:900px;
+    font-size:17px;
+             }
+
+.title-divider{
+    width: 80px;
+    height: 5px;
+    background-color: #1aba9a;
+    margin: 10px 0 25px;
+}
+
+.about-con ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.about-con ul li:first-child {
+    padding: 0 0 12px;
+}
+
+.about-con ul li {
+    padding: 12px 0;
+}
+
+.container-sub {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.container-sub, h1 {
+    position: relative;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.button, .inner h1, .inner h2, .inner h3, .inner h4, .inner h5 {
+    color: #2a2b39;
+    text-transform: uppercase;
+    font-family: Oswald,sans-serif;
+}
+/* body, h1, h2, h3, h4, h5 {
+    font-weight: 400;
+} */
+
+.margin-top10 {
+    margin-top: 10px;
+}
+
+.col-4 {
+    width: 33.33333333%;
+}
+
+.skill-list ul {
+    width:800px;
+}
+
+.skill-list ul li {
+    padding: 5px 0 0;
+    font-size:17px;
+}
+/*
+.skill-list ul {
+    -moz-column-count: 3;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 20px;
+    column-count: 3;
+    column-gap: 20px;
+    width:500px;
+}
+
+.skill-list ul li:before {
+    content: "\f00c";
+    font-family: FontAwesome;
+    font-size: 15px;
+    margin: 0 5px 0 0;
+} */
+
+
+</style>
+
+
+
+<div class="right_col" role="main">
+    <div class='bg-img'>
+        <div class="inner">
+            <h1>SKILLS</h1>
+
+            <div class='title-divider'></div>
+              <div class="container-sub skill-list">
+                  <div class="row">
+                      <h2>Key Skills</h2>
+                      <div class="col-4 margin-top10">
+                          <p class='primary-text'>
+                              </p>
+                          <ul class='skills-list'>
+                              <li>Data collection and ingestion solutions for multi-client data</li>
+                              <li>Automated and manual data quality profiling and remediation</li>
+                              <li>Data processing automation</li>
+                              <li>Machine Learning in real business scenarios, including Deep Learning technologies using Neural Networks as well as
+                                  decision tree based learners, such as Random Forests and Gradient Boosting Trees</li>
+                              <li>Data visualization through web based technologies for use by high profile clients</li>
+                              <li>A working knowledge of data security, compliance (e.g. GDPR) and governance in systems</li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <h2>Key Technologies</h2>
+                      <div class="col-4 margin-top10">
+                          <ul>
+                              <li>Python - A few Python packages have been listed below:</li>
+
+                              <ul>
+                                  <li>Django Web Framework (used to build this website)</li>
+                                  <li>Plotly and Dash (also used to build this website)</li>
+                                  <li>Scikit-learn</li>
+                                  <li>Keras with Tensorflow</li>
+                                  <li>Pandas and Numpy</li>
+                                  <li>NLTK</li>
+                                  <li>Jupyter Notebook</li>
+
+                              </ul>
+                          </ul>
+                              <p class='primary-text'>
+                                  Other key technologies include:
+                              </p>
+                              <div>
+                                  <div>
+                                      <ul>
+                                          <li>Tableau</li>
+                                          <li>Spotfire</li>
+                                          <li>Power BI (basic)</li>
+                                          <li>Alteryx</li>
+                                      </ul>
+                                  </div>
+                                  <div>
+                                      <ul>
+                                          <li>Git Version Control</li>
+                                          <li>Bonobo Git Server</li>
+                                          <li>Spark</li>
+                                          <li>Hadoop with Hive</li>
+                                      </ul>
+                                  </div>
+                                  <div>
+                                      <ul>
+                                          <li>Microsoft Office</li>
+                                          <li>Microsoft SQL Server</li>
+                                          <li>Microsoft Information Integration Services</li>
+                                          <li>MySQL</li>
+                                      </ul>
+                                  </div>
+                                  <div>
+                                      <ul>
+                                          <li>JavaScript (Basic)</li>
+                                          <li>JQuery (Basic)</li>
+                                          <li>Inkscape</li>
+                                      </ul>
+                                  </div>
+                      </div>
+                  </div>
+              </div>
+         <div class="container-sub">
+            <h2>Further detail</h2>
+            <p class='primary-text'>
+                From what I have observed from the industries that I have worked in, I consider myself an expert in
+                my field. I am an expert in the Python programming language, as well as an expert in other technologies,
+                such as Alteryx and Tableau.
+
+
+            </p>
+        </div>
+
+
+
+    </div>
+
+    </div>
+
+</div>
+
+
+{% endblock %}

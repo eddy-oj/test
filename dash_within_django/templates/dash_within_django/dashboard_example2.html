@@ -1,0 +1,64 @@
+{% extends "dash_within_django/base_app_site.html" %}
+
+{% block vendor_stylesheets %}
+  {{ block.super }}
+{% endblock vendor_stylesheets %}
+
+{% block Dash_css %}
+    {{ block.super}}
+{% endblock Dash_css %}
+
+
+{% block content %}
+
+<div class="right_col" role="main">
+    <div class="inner" style='padding-left:20px;'>
+        <h1>Magnetic Anomaly Detector Results</h1>
+          <div class="title-divider"></div>
+            <div class="experience-con">
+
+                <div class='container'>
+                    <div class='jumbotron' style='background-color:#d9edff; padding:35px;'>
+                        <p style='font-size:16px'>
+                            <b>Description:</b> The visualizations below are the results of a novel supervised machine learning prototype
+                            that I coded and applied to magnetic survey data, which is typically used in oil and gas surveys to idenfify
+                            installation operation risks.
+                            My motivation in building this was to further learn about machine learning in a business context as well as assist
+                            in the consistent and reliable identification of magnetic anomalies.
+                            As can be seen from the dashboard below, the prototype worked as the machien was correctly able to identify anoamlies from new data.
+                        </p>
+                    </div>
+                </div>
+
+              <div class="container-sub">
+                  <div class="row">
+
+                  <div>
+                  </div>
+
+                      <div>
+
+
+                        {{ dash_content | safe }}
+
+                     </div>
+               </div>
+           </div>
+
+
+
+       </div>
+    </div>
+</div>
+
+
+
+
+
+{% endblock %}
+
+
+{% block javascripts %}
+  {{ block.super}}
+
+{% endblock javascripts %}

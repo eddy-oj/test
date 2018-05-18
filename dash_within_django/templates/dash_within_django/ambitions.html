@@ -1,0 +1,233 @@
+{% extends "dash_within_django/base_app_site.html" %}
+{% load static %}
+{% block content %}
+
+<style type="text/css">
+
+.bg-img {
+      background: url("{% static 'dash_within_django/images/background2.jpg' %}") no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      height:2000px;
+      /* position:absolute; */
+      width:100vw;
+      overflow-x: hidden;
+      /* margin-left:-20px; */
+      margin-top:-10px;
+      /* left:0
+      top:0; */
+    }
+.right_col{
+    overflow-x: hidden;
+}
+    .nav_menu{
+        margin-bottom:0;
+    }
+
+.nav-md .container.body .right_col{
+    padding-left:0;
+}
+
+.bg-img h1, .bg-img h2{
+    color:black;
+}
+
+.inner{
+padding:50px;
+
+}
+
+li, a, p {color: black;}
+
+.primary-text{
+    width:900px;
+    font-size:17px;
+             }
+
+.title-divider{
+    width: 80px;
+    height: 5px;
+    background-color: #1aba9a;
+    margin: 10px 0 25px;
+}
+
+.about-con ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.about-con ul li:first-child {
+    padding: 0 0 12px;
+}
+
+.about-con ul li {
+    padding: 12px 0;
+}
+
+.container-sub {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.container-sub, h1 {
+    position: relative;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.button, .inner h1, .inner h2, .inner h3, .inner h4, .inner h5 {
+    color: #2a2b39;
+    text-transform: uppercase;
+    font-family: Oswald,sans-serif;
+}
+/* body, h1, h2, h3, h4, h5 {
+    font-weight: 400;
+} */
+
+.margin-top10 {
+    margin-top: 10px;
+}
+
+.col-4 {
+    width: 33.33333333%;
+}
+
+.skill-list ul li {
+    padding: 5px 0 0;
+    list-style: none;
+    font-size:17px;
+}
+
+
+.left-col, .right-col {
+    float: left;
+    margin-top:10px;
+}
+
+.list {
+    font-size: 15px;
+    color:black;
+    margin-left:0;
+    padding-top:30px;
+}
+
+.>td{
+    margin-bottom:20px;
+}
+
+tr.list-item>td{
+  padding-bottom: 1em;
+}
+
+.list-text {
+    padding-left:15px;
+}
+
+</style>
+
+
+<div class="right_col" role="main">
+    <div class='bg-img'>
+        <div class="inner">
+            <h1>Ambitions</h1>
+
+            <div class='title-divider'></div>
+              <div class="container-sub skill-list">
+                  <div class="row">
+                      <h2>Key Ambitions</h2>
+                      <div class="col-4 margin-top10" style='display:inline;'>
+                          <p class='primary-text'>
+                              Below is a list of ambitions that I have and see as essential in order to maximise
+                              business value through technologies:
+                          </p>
+                          <div class='left-col'>
+                              <table class='list'>
+                                  <tr class='list-item'>
+                                      <td><i class='fa fa-exchange'></i></td>
+                                      <td class='list-text'>Build Interconnected Systems</td>
+                                  </tr>
+                                  <tr class='list-item'>
+                                      <td><i  class='fa fa-search'></i></td>
+                                      <td class='list-text'>Produce Advanced Analytical Programs</td>
+                                  </tr>
+                                  <tr>
+
+                                      <td><i class='fa fa-code-fork'></i></td>
+                                      <td class='list-text'>Use Artificial Intelligence (AI) <br>in Integrated Processes</td>
+                                </table>
+                          </div>
+                          <div class='right-col' style='padding-left:60px;'>
+                              <table class='list'>
+                                  <tr class='list-item'>
+                                      <td><i class='fa fa-cogs'></i></td>
+                                      <td class='list-text'>Automation of Business Processes</td>
+
+                                  </tr>
+                                  <tr class='list-item'>
+                                      <td><i  class='fa fa-bar-chart'></i></td>
+                                      <td class='list-text'>Deliver Key Insights On Demand</td>
+                                  </tr>
+                                  <tr>
+                                      <td><i  class='fa fa-database'></i></td>
+                                      <td class='list-text'>Develop a Global Knowledge Database of Technology Solutions</td>
+                                </table>
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+         <div class="container-sub">
+            <h2>Further detail and thoughts on current state of Business intelligence</h2>
+            <p class='primary-text'>
+
+                INCLUDE EXAMPLES OF DATA SCIENCE SOLUTION THAT SOLVED A BUSINESS problem
+                <br><br>
+                INCLUDE EXAMPLE OF PYTHON BASED DASHBOARD SOLUTION TO SOLVE A PROBLEM
+                <br><br>
+                I believe that the solutions required in order to maximise business value lie in the use of smart,
+                integrated systems that allow key insights to be delivered to business stakeholders in an adhoc and on demand way.
+                GIVE AN EXAMPLE HERE    <br><br>
+                Over the course of my career, the business solutions that I have delivered in the oil and gas industry,
+                the renewables industry and financial services industry have had a much more pronounced effect when
+                flexible technologies have been permitted in conjunction with connected, high quality datasets.
+                In my current role, this has only been possible with the use of Python, which has
+                has allowed my team to capture, process and model consistent and feature rich multi-client data in order
+                to solve specific business problems using an "end-to-end" delivery system.
+                <br><br>
+                In addition, before I arrived at my team at my current role, no one knew Python. It is now our core
+                technology due to the flexibility and effectiveness in delivering complete and end-to-end business solutions.
+                <br><br>
+                This is in contrast to some of the business intelligence approaches I have observed in the financial services
+                industry, which are towards the use of 'drag and drop' technnologies like Tableau and Alteryx in order to
+                meet specific business problems. My experience is that these projects generally fail due to the compromises
+                that are made due to the lack of customization in such programs. I consider myself an expert in these
+                technologies yet have experienced this problem first hand. An improved solution is to involve Python
+                programmers to quickly prototype customized solutions.
+                <br><br>
+                I have also observed the use of 'Docker' in order to contain transferrable solutions. My solutions tend
+                to avoid this by utilizing a system that I was integral in designing that faciliates a multi-client,
+                GDPR compliant data storage solution with connected, updatable and multi-client appliations.
+                <br>
+                <br>
+
+                </p>
+        </div>
+
+
+
+    </div>
+
+    </div>
+
+</div>
+
+
+{% endblock %}

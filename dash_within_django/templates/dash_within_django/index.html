@@ -1,0 +1,144 @@
+{% extends "dash_within_django/base_app_site.html" %}
+{% load static %}
+{% block content %}
+
+<style type="text/css">
+
+.bg-img {
+      background: url("{% static 'dash_within_django/images/background2.jpg' %}") no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      height:2000px;
+      /* position:absolute; */
+      width:100vw;
+      overflow-x: hidden;
+      /* margin-left:-20px; */
+      margin-top:-10px;
+      /* left:0
+      top:0; */
+    }
+.right_col{
+    overflow-x: hidden;
+}
+
+.nav_menu{
+        margin-bottom:0;
+    }
+
+.nav-md .container.body .right_col{
+    padding-left:0;
+}
+
+.bg-img h1, .bg-img h2{
+    color:black;
+}
+
+.inner{
+padding:50px;
+
+}
+
+li, a, p {color: black;}
+
+.primary-text{width:900px;
+             }
+
+
+
+ .title-divider{
+     width: 80px;
+     height: 5px;
+     background-color: #1aba9a;
+     margin: 10px 0 25px;
+ }
+
+.about-con ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+.about-con ul li:first-child {
+    padding: 0 0 12px;
+}
+
+.about-con ul li {
+    padding: 12px 0;
+    font-size: 17px;
+}
+
+/* .card-section{
+    background-color:white;
+    opacity:0.75;
+} */
+
+</style>
+
+
+
+<div class="right_col" role="main">
+    <div class='bg-img'>
+        <div class="inner">
+            <div class='card-section'>
+                <h1>ABOUT ME</h1>
+            </div>
+            <div class='title-divider'></div>
+              <div class='about-con'>
+                <ul>
+                    <li>Name: Edward Burmicz</li>
+                    <li>Email: <a href="mailto:eburmicz@gmail.com">eburmicz@gmail.com</a></li>
+                    <li>Date of birth: 04 January 1988</li>
+                    <li>Nationality: British</li>
+                    <li>Title: Full Stack Data Scientist</li>
+                </ul>
+              </div>
+
+            <h2>PROFESSIONAL PROFILE</h2>
+            <p class='primary-text'>
+                I am a full stack data scientist, solving data related problems in a wide range of business problems ranging from
+                database extraction problems, data exploration, data modelling to the delivery of insights to high profile stakeholders
+                through dynamic applications, such as web-based dashboards.
+                <br><br>
+                I have a wide range of skills and expertise. For example, in my current role, I have had a leading role
+                in designing and building the software for an end-to-end analytics technology platform from scratch.
+                This has also involved assisting in the design and build of a multi-client, GDPR compliant data security
+                model for the ingestion, processing and output of data from multiple clients. It has also involved
+                building an application portal in order to share data science solutions that I have developed with
+                my team.
+                <br><br>
+                I have produced a range of automation and analytical solutions in order to meet various business problems
+                in the oil and gas industry as well as the financial services industry. Examples include using
+                machine learning in order to automatically classify data as part of business process automation,
+                anomaly detection in financial data for accounting purposes, and delivery of vizualisations
+                using open source techonologies such as Django and Dash using the Python Programming Language.
+                <br><br>
+                I class myself as a "hacker". I enjoy discovering new technologies, assessing their business value
+                and utilising them in my work, even if it means hacking to do so.
+
+                <br><br>
+                You can use the navigation pane to the left to further explore my CV, as well look at examples of my work.
+                I also encourage you to look at my Ambitions page, which further details my ambitions and views on the current
+                state of business intelligence.
+            </p>
+
+    </div>
+
+    </div>
+
+</div>
+<!-- <script>
+function removeElementsByClass(className){
+    var elements = document.getElementsByClassName(className);
+    while(elements.length > 0){
+        elements[0].parentNode.removeChild(elements[0]);
+    }
+}
+
+removeElementsByClass('top_nav');
+</script> -->
+
+{% endblock %}

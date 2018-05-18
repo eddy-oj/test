@@ -1,0 +1,67 @@
+{% extends "dash_within_django/base_app_site.html" %}
+
+{% block vendor_stylesheets %}
+  {{ block.super }}
+{% endblock vendor_stylesheets %}
+
+{% block Dash_css %}
+    {{ block.super}}
+{% endblock Dash_css %}
+
+
+{% block content %}
+
+<div class="right_col" role="main">
+    <div class="inner" style='padding-left:20px;'>
+        <h1>Trading Anomaly Tracker</h1>
+          <div class="title-divider"></div>
+            <div class="experience-con">
+
+                <div class='container'>
+                    <div class='jumbotron' style='background-color:#d9edff; padding:35px;'>
+                        <p style='font-size:16px'>
+                            <b>Description:</b> The visualizations below were produced in conjunction with my MSc thesis, which involved working
+                            with a major financial institution in order to find a viable method of using technology to automatically identify
+                            indications of rogue trading in big data.
+                             This mainly involved exploring machine learning technologies using small subsets of a database in order to
+                             test whether normal trader behaviour could be learned.
+                             One of the methods explored, which invovled using Decision Tree based learners, such as a Random Forest learner or the
+                             xGBoost learner gave promising indications of being a viable technology for the financial investigative team to utilize.
+                             This dashboard below is a modfied version of the framework used to present the results to the client.
+                             The data has been faked to for client confidentiality.
+                        </p>
+                    </div>
+                </div>
+
+              <div class="container-sub">
+                  <div class="row">
+
+                  <div>
+                  </div>
+
+                      <div>
+
+
+                        {{ dash_content | safe }}
+
+                     </div>
+               </div>
+           </div>
+
+
+
+       </div>
+    </div>
+</div>
+
+
+
+
+
+{% endblock %}
+
+
+{% block javascripts %}
+  {{ block.super}}
+
+{% endblock javascripts %}

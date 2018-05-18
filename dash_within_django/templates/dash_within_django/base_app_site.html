@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+      {% block title %}<title>Edward Burmicz</title>{% endblock %}
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      {% load static %}
+
+
+
+      {% block vendor_stylesheets %}
+        <!-- Bootstrap -->
+        <link href="{% static 'dash_within_django/css/bootstrap.min.css' %}" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link href="{% static 'dash_within_django/css/font-awesome.min.css' %}" rel="stylesheet">
+
+        <!-- NProgress -->
+        <link href="{% static 'dash_within_django/css/nprogress.css' %}" rel="stylesheet' %}">
+        <!-- bootstrap-daterangepicker -->
+        <link href="{% static 'dash_within_django/css/daterangepicker.css' %}" rel="stylesheet">
+        <!-- iCheck -->
+        <link href="{% static 'dash_within_django/css/icheck_green.css' %}" rel="stylesheet">
+        <!-- bootstrap-progressbar -->
+        <link href="{% static 'dash_within_django/css/bootstrap-progressbar-3.3.4.min.css' %}" rel="stylesheet">
+        <!-- JQVMap -->
+        <link href="{% static 'dash_within_django/css/jqvmap.min.css' %}" rel="stylesheet"/>
+      {% endblock vendor_stylesheets %}
+
+      {% block Dash_css %}
+      <!-- Add Dash css in static file -->
+      <link href="{% static 'dash_within_django/css/Dash_css/react-select@1.0.0-rc.3.min.css' %}" rel="stylesheet">
+      <link href="{% static 'dash_within_django/css/Dash_css/custom_dash_styles.css' %}" rel="stylesheet">
+      {% endblock Dash_css %}
+
+      {% block custom_css %}
+      <!-- Custom Theme Style -->
+      <link href="{% static 'dash_within_django/css/custom.css' %}" rel="stylesheet">
+      {% endblock custom_css %}
+
+    </head>
+
+<body class="{% block body_class %}nav-md {% endblock body_class %}">
+  {% block body %}
+    <div class="container body">
+      <div class="main_container">
+
+        {% block sidebar %}
+          <div class="col-md-3 left_col {% block sidebar_class %} {% endblock sidebar_class %}">
+            {% include "dash_within_django/sidebar.html" %}
+          </div>
+        {% endblock sidebar %}
+
+        {% block top_navigation %}
+          <div class="top_nav">
+            {% include "dash_within_django/top_navigation.html" %}
+          </div>
+        {% endblock top_navigation %}
+
+        {% block content %}
+          <!-- {{ content }} -->
+        {% endblock content %}
+
+      </div>
+    </div>
+
+    {% block javascripts %}
+
+      <!-- jQuery -->
+      <script src="{% static 'dash_within_django/js/jquery.min.js' %}"></script>
+      <!-- Bootstrap -->
+      <script src="{% static 'dash_within_django/js/bootstrap.min.js' %}"></script>
+
+      <!-- FastClick -->
+      <script src="{% static 'dash_within_django/js/fastclick.js' %}"></script>
+      <!-- NProgress -->
+      <script src="{% static 'dash_within_django/js/nprogress.js' %}"></script>
+      <!-- bootstrap-progressbar -->
+      <script src="{% static 'dash_within_django/js/bootstrap-progressbar.min.js' %}"></script>
+      <!-- iCheck -->
+      <script src="{% static 'dash_within_django/js/icheck.min.js' %}"></script>
+      <!-- bootstrap-daterangepicker -->
+      <script src="{% static 'dash_within_django/js/moment.min.js' %}"></script>
+      <script src="{% static 'dash_within_django/js/daterangepicker.js' %}"></script>
+      <!-- bootstrap-wysiwyg -->
+      <script src="{% static 'dash_within_django/js/bootstrap-wysiwyg.min.js' %}"></script>
+      <script src="{% static 'dash_within_django/js/jquery.hotkeys.js' %}"></script>
+      <script src="{% static 'dash_within_django/js/prettify.js' %}"></script>
+      <!-- jQuery Tags Input -->
+      <script src="{% static 'dash_within_django/js/jquery.tagsinput.js' %}"></script>
+      <!-- Switchery -->
+      <script src="{% static 'dash_within_django/js/switchery.min.js' %}"></script>
+      <!-- Select2 -->
+      <script src="{% static 'dash_within_django/js/select2.full.min.js' %}"></script>
+      <!-- Parsley -->
+      <script src="{% static 'dash_within_django/js/parsley.min.js' %}"></script>
+      <!-- Autosize -->
+      <script src="{% static 'dash_within_django/js/autosize.min.js' %}"></script>
+      <!-- jQuery autocomplete -->
+      <script src="{% static 'dash_within_django/js/jquery.autocomplete.min.js' %}"></script>
+      <!-- starrr -->
+      <script src="{% static 'dash_within_django/js/starrr.js' %}"></script>
+    {% endblock %}
+
+    <!-- Custom Theme Scripts -->
+    <script src="{% static 'dash_within_django/js/custom.js' %}"></script>
+
+  {% endblock body %}
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+{% load static %}
+
+<style>
+
+.logo {text-transform: lowercase; }
+
+.logo i {
+        background: url("{% static 'dash_within_django/images/artificial-intelligence.svg' %}") no-repeat 0 0;
+        background-size: 5rem;
+        float: left;
+        height: 5.2rem;
+        text-indent: -4000px;
+        /*If you remove text-indent and add: */
+        /*padding-left: 6rem;*/
+        vertical-align: middle;
+        width: 4.8rem;
+        padding-left:10px;
+        }
+</style>
+
+<div class="left_col scroll-view">
+  <div class="navbar nav_title" style="border: 0;">
+    <a class="site_title"><p style='padding-left:10px;' class="logo"><i></i></p>
+        <div style='text-align:center; margin-top:60px;'><span style='font-size:23px;'>Edward Burmicz</span></div>
+        <div style='text-align:center;'><span style='font-size:13.5px;'> Full Stack Data Scientist</span></div>
+    </a>
+
+
+  </div>
+
+  <div class="clearfix"></div>
+
+  <!-- menu profile quick info -->
+  <div class="profile clearfix">
+   <div style='text-align:center;'>
+     <div class="profile_pic" style='width:100%'>
+      <!-- <img style='margin-left:0;' src="{% static 'dash_within_django/images/avatar.png' %}" class="img-circle profile_img"> -->
+      <img style='margin-left:0; margin-top:30px; width:30%' src="{% static 'dash_within_django/images/avatar.png' %}" class="img profile_img">
+     </div>
+   </div>
+    <div class="profile_info" style='width:100%; text-align:center'>
+      <span>Contact Address:</span>
+      <h2>eburmicz@gmail.com</h2>
+    </div>
+  </div>
+  <!-- /menu profile quick info -->
+
+  <br />
+  <br />
+
+  <!-- sidebar menu -->
+  <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+    <div class="menu_section">
+      <h3>Navigation</h3>
+      <ul class="nav side-menu">
+        <li><a href="{% url 'dash_within_django:index' %}"><i class="fa fa-home"></i> About Me</a>
+        </li>
+        <li><a><i class="fa fa-edit"></i> Curriculum Vitae<span class="fa fa-chevron-down"></span></a>
+        <ul class="nav child_menu">
+          <li><a href="{% url 'dash_within_django:skills' %}"> Skills</a></li>
+          <li><a href="{% url 'dash_within_django:experience' %}"> Experience</a></li>
+          <li><a href="{% url 'dash_within_django:education' %}"> Education</a></li>
+        </ul>
+        <li><a><i class="fa fa-bar-chart-o"></i> Example Work<span class="fa fa-chevron-down"></span></a>
+          <ul class="nav child_menu">
+            <li><a href="{% url 'dash_within_django:dashboard_example1' %}"> Dashboard: Rogue Detection Visualization</a></li>
+            <li><a href="{% url 'dash_within_django:dashboard_example2' %}"> Dashboard: Anomaly Detection in Magnetic Data</a></li>
+          </ul>
+        </li>
+        <li><a href="{% url 'dash_within_django:ambitions' %}"><i class="fa fa-comment"></i> Ambitions</a>
+        </li>
+        <li><a><i class="fa fa-desktop"></i> Additional Resources<span class="fa fa-chevron-down"></span></a>
+          <ul class="nav child_menu">
+            <li><a href="https://www.linkedin.com/in/edward-burmicz-900058146/">Linkedin</a></li>
+            <li><a href="download.html">Download CV<span class="label label-success pull-right">Coming Soon</span></a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+  <!-- /sidebar menu -->
+
+</div>
