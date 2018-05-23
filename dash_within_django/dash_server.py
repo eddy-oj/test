@@ -4,7 +4,7 @@ import re
 from django.http.response import HttpResponse
 
 
-URL_BASE_PATHNAME = '/'+'dash_within_django/'
+URL_BASE_PATHNAME = '/'
 
 server = Flask(__name__)
 

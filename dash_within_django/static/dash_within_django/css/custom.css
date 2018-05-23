@@ -15,8 +15,22 @@ html , body{
     display:inline-block;
 }
 
+
+
 #col_one {
     /* margin-right:40px; */
+}
+
+
+h2 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.button, .inner h1, .inner h2, .inner h3, .inner h4, .inner h5 {
+    color: #2a2b39;
+    /* text-transform: uppercase; */
+    font-family: Oswald,sans-serif;
 }
 
 .logo {

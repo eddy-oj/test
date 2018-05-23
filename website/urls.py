@@ -12,7 +12,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     # app:
-    path('dash_within_django/', include('dash_within_django.urls')),
+    path('', include('dash_within_django.urls')),
 
     # end of urls list. append static doc folder:
     ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

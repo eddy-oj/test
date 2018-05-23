@@ -1,1 +1,0 @@
-function progressBar(i,t){"use strict";i*t.width()/100;t.find("div").animate({width:i+"%"},500).html("<span>"+i+"</span>")}

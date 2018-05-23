@@ -11,7 +11,7 @@ app_name = 'dash_within_django'
 urlpatterns = [
                 re_path('^_dash-', views.dash_ajax),
 
-                path('index/', views.index, name='index'),
+                path('home/', views.index, name='index'),
                 path('skills/', views.skills, name='skills'),
                 path('experience/', views.experience, name='experience'),
                 path('education/', views.education, name='education'),

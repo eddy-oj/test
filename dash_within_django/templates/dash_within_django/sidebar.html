@@ -49,8 +49,8 @@
   <br />
 
   <!-- sidebar menu -->
-  <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
-    <div class="menu_section">
+  <div id="sidebar-menu" class="main_menu_side hidden-print main_menu toggled">
+    <div class="menu_section toggled">
       <h3>Navigation</h3>
       <ul class="nav side-menu">
         <li><a href="{% url 'dash_within_django:index' %}"><i class="fa fa-home"></i> About Me</a>
@@ -64,7 +64,6 @@
         <li><a><i class="fa fa-bar-chart-o"></i> Example Work<span class="fa fa-chevron-down"></span></a>
           <ul class="nav child_menu">
             <li><a href="{% url 'dash_within_django:dashboard_example1' %}"> Dashboard: Rogue Detection Visualization</a></li>
-            <li><a href="{% url 'dash_within_django:dashboard_example2' %}"> Dashboard: Anomaly Detection in Magnetic Data</a></li>
           </ul>
         </li>
         <li><a href="{% url 'dash_within_django:ambitions' %}"><i class="fa fa-comment"></i> Ambitions</a>
